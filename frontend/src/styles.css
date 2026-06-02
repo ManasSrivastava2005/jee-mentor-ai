@@ -1,0 +1,335 @@
+:root {
+  color: #172033;
+  background: #f5f7fb;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+.appShell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.sidebar {
+  background: #111827;
+  color: white;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.brand span {
+  color: #b8c2d8;
+  font-size: 13px;
+}
+
+nav {
+  display: grid;
+  gap: 10px;
+}
+
+.navButton,
+.primaryButton,
+.secondaryButton,
+.iconButton {
+  border: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navButton {
+  background: transparent;
+  color: #dbe4f5;
+  justify-content: flex-start;
+  padding: 12px;
+}
+
+.navButton.active {
+  background: #2d6cdf;
+  color: white;
+}
+
+main {
+  min-width: 0;
+}
+
+.workspace {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.toolbar h2 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+.toolbar p {
+  margin: 0;
+  color: #657084;
+}
+
+.iconButton {
+  width: 44px;
+  height: 44px;
+  color: #172033;
+  background: white;
+  border: 1px solid #d9e0ec;
+}
+
+.iconButton input {
+  display: none;
+}
+
+.questionComposer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: stretch;
+}
+
+textarea {
+  width: 100%;
+  min-height: 130px;
+  resize: vertical;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #cfd8e8;
+  background: white;
+  color: #172033;
+}
+
+.primaryButton {
+  min-width: 120px;
+  padding: 0 20px;
+  color: white;
+  background: #2d6cdf;
+}
+
+.secondaryButton {
+  padding: 12px 16px;
+  background: #ffffff;
+  border: 1px solid #cfd8e8;
+  color: #172033;
+}
+
+.errorBox {
+  margin-top: 16px;
+  padding: 12px;
+  background: #fff1f0;
+  border: 1px solid #ffccc7;
+  border-radius: 8px;
+}
+
+.answerGrid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 18px;
+}
+
+.panel,
+.tablePanel,
+.questionCard,
+.metricCard {
+  background: white;
+  border: 1px solid #dfe6f1;
+  border-radius: 8px;
+}
+
+.mainAnswer,
+.detailPanel,
+.panel {
+  padding: 18px;
+}
+
+.answerHeader {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.answerHeader span,
+.questionCard span,
+.metricCard span {
+  background: #e8f1ff;
+  color: #2357aa;
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+pre {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.finalAnswer {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.finalAnswer strong {
+  color: #4c596d;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.reasoningList {
+  margin: 0;
+  padding-left: 22px;
+  line-height: 1.7;
+}
+
+.reasoningList li {
+  margin-bottom: 8px;
+}
+
+.detailPanel {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.detailPanel h3,
+.panel h3,
+.metricCard h3 {
+  margin: 8px 0 4px;
+}
+
+code {
+  display: block;
+  padding: 9px;
+  background: #f2f5f9;
+  border-radius: 6px;
+  overflow-wrap: anywhere;
+}
+
+blockquote {
+  margin: 0;
+  padding-left: 12px;
+  border-left: 3px solid #2d6cdf;
+  color: #4c596d;
+}
+
+blockquote span {
+  display: block;
+  margin-top: 4px;
+}
+
+.similarSection {
+  margin-top: 22px;
+}
+
+.similarGrid,
+.metricGrid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.questionCard,
+.metricCard {
+  padding: 16px;
+}
+
+.questionCard p,
+.metricCard p,
+.panel p {
+  color: #4c596d;
+}
+
+.tablePanel {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px;
+  border-bottom: 1px solid #e7ecf4;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: #4c596d;
+  font-size: 13px;
+}
+
+.chartBand {
+  background: white;
+  border: 1px solid #dfe6f1;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+@media (max-width: 900px) {
+  .appShell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    padding: 14px;
+  }
+
+  nav {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .answerGrid,
+  .similarGrid,
+  .metricGrid,
+  .questionComposer {
+    grid-template-columns: 1fr;
+  }
+}
