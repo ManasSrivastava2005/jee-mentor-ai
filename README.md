@@ -187,7 +187,7 @@ http://localhost:5173
 
 ### History Page
 
-![History Page](docs/screenshots/history.png)
+![History Page](docs/screenshots/History.png)
 
 ---
 
