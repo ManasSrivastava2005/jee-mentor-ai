@@ -175,6 +175,23 @@ http://localhost:5173
 
 ---
 
+## Screenshots
+
+### Question Solver
+
+![Question Solver](docs/screenshots/chat.png)
+
+### Analytics Dashboard
+
+![Analytics Dashboard](docs/screenshots/analytics.png)
+
+### History Page
+
+![History Page](docs/screenshots/history.png)
+
+---
+
+
 ## Hackathon Submission
 
 **Hackathon:** Agents League 2026
